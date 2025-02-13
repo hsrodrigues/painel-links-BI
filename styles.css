@@ -1,0 +1,98 @@
+/* Reset e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Fundo claro e suave */
+    color: #333; /* Texto escuro, mas suave */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header {
+    background-color: #000080; /* Azul suave para o cabeçalho */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cards-background {
+    background-color: #ffffff; /* Fundo branco limpo */
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.link-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.link-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #34495e; /* Azul suave para o texto */
+    font-size: 1.1rem;
+}
+
+.link-card i {
+    font-size: 1.6rem;
+    margin-right: 12px;
+    color: #4682B4; /* Azul claro para ícones */
+}
+
+.link-card:hover {
+    color: #2980b9; /* Azul mais forte no hover */
+}
+
+.link-card span {
+    font-weight: 500;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000080; /* Azul suave para o rodapé */
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    text-align: center;
+}
